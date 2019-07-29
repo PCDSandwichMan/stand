@@ -1,0 +1,22 @@
+{
+  "name": "stand",
+  "version": "1.0.0",
+  "description": "website for rally/protest meetups and information",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PCDSandwichMan/stand.git"
+  },
+  "author": "PCDSandwichMan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PCDSandwichMan/stand/issues"
+  },
+  "homepage": "https://github.com/PCDSandwichMan/stand#readme",
+  "devDependencies": {
+    "parcel": "^1.12.3"
+  }
+}

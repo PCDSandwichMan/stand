@@ -4,43 +4,239 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./sass/main.css" />
-    <title>Stand.</title>
+    <script src="https://kit.fontawesome.com/431794b384.js"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Stand | Home</title>
   </head>
   <body>
     <header>
-      <!-- - Navbar -->
-      <ul class="nav navbar-light justify-content-end align-items-center mr-5">
-        <a class="navbar-brand justify-self-start mr-auto">
-          <img
-            src="./images/generated.svg"
-            width="100"
-            height="100"
-            alt=""
-          />
-        </a>
-        <li class="nav-item">
-          <a class="nav-link active">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"">Meetups</a>
-        </li>
-      </ul>
+      <img src="./images/generated.svg" width="100" height="100" id="headImg" />
       <!-- - Title content -->
+      
+      <div id="headContainer">
         <h1 id="headContainer__title">Stand.</h1>
+        <div id="header__button">
+          <h3>Join Us</h3>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </div>
+
     </header>
+    <main>
+      <!-- - Nav for body -->
+      <nav>
+        <ul class="main-nav">
+            <li class="nav-i" id="main-i">
+                <a>Home</a>
+              </li>
+              <li class="nav-i">
+                  <a">About</a>
+                </li>
+              <li class="nav-i">
+                <a">Blog</a>
+              </li>
+              <li class="nav-i">
+                <a">Meetups</a>
+              </li>
+              <li class="nav-i">
+                  <a">Contact</a>
+                </li>
+        </ul>
+      </nav>
+      <!-- - Main Content Start -->
+      <a class="nav-img">
+          <img src="./images/generated.svg" width="100" height="100" alt="" />
+        </a>
+      <!-- - About Section -->
+      <section id="about">
+        <h1>About</h1>
+        <hr>
+        <div id='about__container'>
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem explicabo nemo numquam corporis animi maiores hic! Earum voluptatibus molestiae in magni magnam consequuntur, aperiam veritatis minus corrupti aspernatur, voluptates distinctio quae rerum, sequi officia! Culpa eos commodi mollitia magni repudiandae aspernatur ratione atque deleniti praesentium! Nemo similique aperiam repellat error.
+          </h3>
+        </div>
+      </section>
+
+      <!-- - Blog Section -->
+      <section id="blog">
+          <h1>Blog</h1>
+          <hr>
+          <div id='blog__container'>
+            <div id='b1' class="blog__container--item">
+                <img src="./images/blog-angryCop.jpg" alt="guy walking with camera">
+            </div>
+            <div id='b2' class="blog__container--item">
+              <img src="./images/blog-cameraWalking.jpg" alt="guy walking with camera">
+            </div>
+            <div id='b3' class="blog__container--item">
+                <img src="./images/blog-fireRiot.jpg" alt="guy walking with camera">
+            </div>
+            <div id='b4' class="blog__container--item">
+                <img src="./images/blog-gasMask.jpg" alt="guy walking with camera">
+            </div>
+            <div id='b5' class="blog__container--item">
+                <img src="./images/blog-hurtHead.jpg" alt="guy walking with camera">
+            </div>
+            <div id='b6' class="blog__container--item">
+                <img src="./images/blog-storeFire.jpg" alt="guy walking with camera">
+            </div>
+          </div>
+        </section>
+
+        <!-- - Meetup Section -->
+      <section id="meetup">
+          <h1>Meetups</h1>
+          <hr>
+          <div id='meetup__container'>
+
+              <div class="card-deck">
+                  <div class="card">
+                    <img src="./images/meetup-global.jpg" class="card-img-top" alt="...">
+                    <div class="card-body pl-0">
+                      <div class="card-title">
+                        <h5>Global Planning</h5>
+                        <small>April 29, 2013 | Present</small>
+                      </div>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/meetup-aFlag.jpg" class="card-img-top" alt="...">
+                    <div class="card-body pl-0">
+                        <div class="card-title">
+                            <h5>American Activists</h5>
+                            <small>April 29, 2013 | Present</small>
+                          </div>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/meetup-euFlag.jpg" class="card-img-top" alt="...">
+                    <div class="card-body pl-0">
+                        <div class="card-title">
+                            <h5>EU Groups</h5>
+                            <small>April 29, 2013 | Present</small>
+                          </div>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                      <img src="./images/meetup-spaceTeam.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body pl-0">
+                          <div class="card-title">
+                              <h5>Space Team</h5>
+                              <small>April 29, 2013 | Present</small>
+                            </div>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                      </div>
+                    </div>
+                </div>
+          </div>
+        </section>
+        <!-- - Meetups Section -->
+      <section id="leadership">
+          <h1>Leadership</h1>
+          <hr>
+          <div id='leadership__container'>
+            <div id='leadership__container--leader'>
+                <div id='leadership__container--leader-info'>
+              <h2>Martin</h2>
+              <small>|| CEO</small>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi iusto, ut libero inventore nisi necessitatibus earum est enim, magnam sequi architecto veniam, distinctio quibusdam quasi quisquam molestias fugiat non perferendis.
+              </p>
+                </div>
+                <img src="./images/martin-staff.jpg" alt="CEO profile portrait">
+            </div>
+          </div>
+          <div id='leadership__container'>
+              <div id='leadership__container--leader'>
+                  <div id='leadership__container--leader-info'>
+                <h2>Stefan</h2>
+                <small>|| CTO</small>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi iusto, ut libero inventore nisi necessitatibus earum est enim, magnam sequi architecto veniam, distinctio quibusdam quasi quisquam molestias fugiat non perferendis.
+                </p>
+                  </div>
+                  <img src="./images/stefan-staff.jpg" alt="CTO profile portrait">
+              </div>
+            </div>
+            <div id='leadership__container'>
+                <div id='leadership__container--leader'>
+                    <div id='leadership__container--leader-info'>
+                  <h2>Ashley</h2>
+                  <small>|| CFO</small>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi iusto, ut libero inventore nisi necessitatibus earum est enim, magnam sequi architecto veniam, distinctio quibusdam quasi quisquam molestias fugiat non perferendis.
+                  </p>
+                    </div>
+                    <img src="./images/ashley-staff.jpg" alt="CFO profile portrait">
+                </div>
+              </div>
+              <div id='leadership__container'>
+                  <div id='leadership__container--leader'>
+                      <div id='leadership__container--leader-info'>
+                    <h2>Martin</h2>
+                    <small>|| Chief Security Officer</small>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi iusto, ut libero inventore nisi necessitatibus earum est enim, magnam sequi architecto veniam, distinctio quibusdam quasi quisquam molestias fugiat non perferendis.
+                    </p>
+                      </div>
+                      <img src="./images/leroy-staff.jpg" alt="CEO profile portrait">
+                  </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+      <!-- -- Footer Cut Out -->
+      <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="my-svg">
+        <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+      </svg>
+      <!-- - contact and form -->
+      <section id="footer">
+        <div id='footer__container'>
+            <h1>CONTACT</h1>
+            <hr>
+            <h4>Have a question or want to join?</h4>
+            <form action="">
+              <input type="text" name="name" id="userName" placeholder="Name">
+              <input type="text" name="email" id="userEmail" placeholder="Email">
+              <textarea name="message" id="usermessage"  placeholder="Your Message"></textarea>
+              <input type="submit">
+            </form>
+          </div>
+          <div id='footerSocial'>
+              <div id="launchBtn">
+                <i class="fas fa-angle-double-up fa-3x"></i>
+              </div>
+              <ul>
+                <li>
+                    <i class="fab fa-linkedin-in"></i>
+                </li>
+                <li>
+                    <i class="fab fa-facebook-f"></i>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                </li>
+                <li>
+                    <i class="fab fa-twitter"></i>
+                </li>
+              </ul>
+              <small>ECMA <span>&copy;</span>2019</small>
+          </div>
+        </section>
+    </footer>
+
+
     <!-- - Bootstrap Scripts -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -57,5 +253,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

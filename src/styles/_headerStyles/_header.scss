@@ -1,0 +1,67 @@
+@import '../helpers/variables';
+// - Header Styling
+
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.055), rgba(0, 0, 0, 0.685)),
+    url('../images/stand-hero.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#headContainer {
+  align-self: center;
+  top: 28%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#headContainer__title {
+  color: white;
+  font-size: 10rem;
+  text-shadow: 2px 2px 4px #000;
+}
+
+#header__button {
+  color: white;
+  border: 2px white solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 3vw;
+  transition: all 500ms ease-in;
+  i {
+    font-size: 1.5rem;
+    margin-left: 1vw;
+    transition: transform 200ms ease-in;
+  }
+  &:hover {
+    background-color: $header-lightBlue;
+    cursor: pointer;
+    i {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+#headImg {
+  cursor: pointer;
+  transition: all 500ms ease-in;
+  &:hover {
+    filter: invert(1);
+    animation: rotation 800ms infinite linear;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+}

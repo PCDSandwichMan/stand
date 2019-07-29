@@ -1,0 +1,17 @@
+@import '../helpers/variables';
+
+#meetup {
+    @extend %card--title-center;
+}
+.card {
+    color: #616161;
+    border: none;
+    img {
+        height: 18vw;
+    }
+}
+
+.card-title {
+    border-bottom: 3px $header-lightBlue solid;
+    padding-bottom: 1vw;
+}

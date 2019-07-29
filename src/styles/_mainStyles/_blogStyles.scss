@@ -1,0 +1,16 @@
+#blog {
+  @extend %card--title-center;
+}
+
+#blog__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 20vw;
+}
+
+.blog__container--item {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

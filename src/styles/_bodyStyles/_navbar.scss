@@ -1,0 +1,31 @@
+nav {
+    background-color: #1A242F;
+    border-bottom: #53C3CA 4px solid;
+}
+
+.main-nav {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    padding: 1.2vw 0;
+}
+
+#main-i {
+    margin-left: 0vw;
+    color: #C13362;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.nav-i {
+    font-weight: lighter;
+    margin-left: 5vw;
+    font-size: 1.3rem;
+    transition: color 250ms;
+    &:hover {
+        color: #C13362;
+        cursor: pointer;
+    }
+}
