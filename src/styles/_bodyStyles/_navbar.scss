@@ -1,31 +1,39 @@
+@import '../helpers/placeholders';
+
 nav {
-    background-color: #1A242F;
-    border-bottom: #53C3CA 4px solid;
+  background-color: #1a242f;
+  border-bottom: #53c3ca 4px solid;
+  position: sticky;
+  top: 0;
+  z-index: 9;
 }
 
 .main-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 15%;
+  padding: 1.2vw 0;
+  a {
+    text-decoration: none;
     color: white;
-    display: flex;
-    align-items: center;
-    margin-left: 15%;
-    padding: 1.2vw 0;
+  }
 }
 
-#main-i {
-    margin-left: 0vw;
-    color: #C13362;
-    &:hover {
-        cursor: pointer;
-    }
+#main-i a {
+  margin-left: 0vw;
+  color: $pink;
 }
 
 .nav-i {
-    font-weight: lighter;
-    margin-left: 5vw;
-    font-size: 1.3rem;
-    transition: color 250ms;
+  font-weight: lighter;
+  margin-left: 5vw;
+  font-size: 1.3rem;
+
+  a {
+    transition: all 250ms;
     &:hover {
-        color: #C13362;
-        cursor: pointer;
+      color: $pink;
+      cursor: pointer;
     }
+  }
 }

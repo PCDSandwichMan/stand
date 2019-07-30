@@ -33,6 +33,10 @@ header {
           align-items: center;
 }
 
+#headContainer a {
+  text-decoration: none;
+}
+
 #headContainer__title {
   color: white;
   font-size: 10rem;
@@ -110,13 +114,45 @@ header {
   }
 }
 
+#about, #blog, #meetup, #leadership {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0vw 10vw 20vw;
+}
+
+#about h1, #blog h1, #meetup h1, #leadership h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#about hr, #blog hr, #meetup hr, #leadership hr {
+  background-color: #212529;
+  height: .2vw;
+  width: 7vw;
+  margin-bottom: 8vw;
+}
+
 nav {
-  background-color: #1A242F;
-  border-bottom: #53C3CA 4px solid;
+  background-color: #1a242f;
+  border-bottom: #53c3ca 4px solid;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9;
 }
 
 .main-nav {
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,25 +163,29 @@ nav {
   padding: 1.2vw 0;
 }
 
-#main-i {
-  margin-left: 0vw;
-  color: #C13362;
+.main-nav a {
+  text-decoration: none;
+  color: white;
 }
 
-#main-i:hover {
-  cursor: pointer;
+#main-i a {
+  margin-left: 0vw;
+  color: #c13362;
 }
 
 .nav-i {
   font-weight: lighter;
   margin-left: 5vw;
   font-size: 1.3rem;
-  -webkit-transition: color 250ms;
-  transition: color 250ms;
 }
 
-.nav-i:hover {
-  color: #C13362;
+.nav-i a {
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.nav-i a:hover {
+  color: #c13362;
   cursor: pointer;
 }
 
@@ -202,6 +242,35 @@ nav {
   font-size: 1.5rem;
 }
 
+#about, #blog, #meetup, #leadership {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0vw 10vw 20vw;
+}
+
+#about h1, #blog h1, #meetup h1, #leadership h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#about hr, #blog hr, #meetup hr, #leadership hr {
+  background-color: #212529;
+  height: .2vw;
+  width: 7vw;
+  margin-bottom: 8vw;
+}
+
 #blog__container {
   display: -ms-grid;
   display: grid;
@@ -210,9 +279,105 @@ nav {
   grid-auto-rows: 20vw;
 }
 
+.blog__container--item {
+  position: relative;
+}
+
 .blog__container--item img {
   width: 100%;
   height: 100%;
+  -webkit-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+}
+
+.blog__container--item img:hover {
+  -webkit-filter: opacity(0);
+          filter: opacity(0);
+}
+
+.blog__container--item:hover .slide-bottom {
+  top: 70%;
+  opacity: 1;
+}
+
+.blog__container--item:hover .slide-top {
+  top: 30%;
+  opacity: 1;
+}
+
+.slide-top {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  top: 10%;
+  opacity: 0;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.slide-top__text {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.slide-top__focus {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #c13362;
+}
+
+.slide-bottom {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  top: 90%;
+  opacity: 0;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.slide-bottom:hover .card-bg {
+  opacity: 0;
+}
+
+.card-button {
+  padding: 0.5vw 1vw;
+  border: 2px solid #c13362;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.card-button h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.card-button:hover {
+  background-color: #c13362;
+}
+
+.card-button:hover h3 {
+  color: white;
 }
 
 .card {
