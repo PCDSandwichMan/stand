@@ -1,1 +1,0 @@
-{"version":3,"sources":["js/main.js"],"names":[],"mappings":"AAAA;AAEA;AAEA","file":"main.fb6bbcaf.js","sourceRoot":"../src","sourcesContent":["// const scrollDown = require('./dropBtn');\n\n// const dropBtn = document.getElementById('header__button');\n\n// dropBtn.addEventListener('click', scrollDown);\n"]}

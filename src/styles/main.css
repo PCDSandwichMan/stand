@@ -163,30 +163,29 @@ nav {
   padding: 1.2vw 0;
 }
 
-.main-nav a {
-  text-decoration: none;
-  color: white;
-}
-
 #main-i a {
   margin-left: 0vw;
   color: #c13362;
 }
 
-.nav-i {
+ul.main-nav .nav-i {
   font-weight: lighter;
   margin-left: 5vw;
   font-size: 1.3rem;
 }
 
-.nav-i a {
+ul.main-nav .nav-i a {
   -webkit-transition: all 250ms;
   transition: all 250ms;
 }
 
-.nav-i a:hover {
+ul.main-nav .nav-i a:hover {
   color: #c13362;
   cursor: pointer;
+}
+
+ul.main-nav .nav-i > a {
+  color: white;
 }
 
 #about, #blog, #meetup, #leadership {
@@ -380,9 +379,19 @@ nav {
   color: white;
 }
 
+.card-deck:hover .card {
+  opacity: .4;
+}
+
+.card-deck .card:hover {
+  opacity: 1;
+}
+
 .card {
   color: #616161;
   border: none;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
 
 .card img {
@@ -392,6 +401,43 @@ nav {
 .card-title {
   border-bottom: 3px #53C3CA solid;
   padding-bottom: 1vw;
+}
+
+.card-title h5 {
+  font-weight: 800;
+  color: black;
+}
+
+#meet1:hover {
+  cursor: pointer;
+}
+
+#meet1:hover h5 {
+  color: #53C3CA;
+}
+
+#meet2:hover {
+  cursor: pointer;
+}
+
+#meet2:hover h5 {
+  color: #53C3CA;
+}
+
+#meet3:hover {
+  cursor: pointer;
+}
+
+#meet3:hover h5 {
+  color: #53C3CA;
+}
+
+#meet4:hover {
+  cursor: pointer;
+}
+
+#meet4:hover h5 {
+  color: #53C3CA;
 }
 
 #about, #blog, #meetup, #leadership {
@@ -622,16 +668,17 @@ form textarea {
   display: inline-block;
   font-size: 1.8rem;
   margin: 0 1vw;
-  padding: .5vw 1.5vw;
+  padding: 0.5vw 1.5vw;
   background-color: #262f38;
 }
 
 #footerSocial ul li:hover {
   cursor: pointer;
+  background-color: #53C3CA;
 }
 
 #footerSocial small {
-  color: #8F9AA7;
+  color: #8f9aa7;
 }
 
 #footerSocial small span {
@@ -647,6 +694,15 @@ form textarea {
 
 #launchBtn i:hover {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: white;
 }
 
 html {

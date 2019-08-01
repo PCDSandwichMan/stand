@@ -13,10 +13,6 @@ nav {
   align-items: center;
   margin-left: 15%;
   padding: 1.2vw 0;
-  a {
-    text-decoration: none;
-    color: white;
-  }
 }
 
 #main-i a {
@@ -24,11 +20,10 @@ nav {
   color: $pink;
 }
 
-.nav-i {
+ul.main-nav .nav-i {
   font-weight: lighter;
   margin-left: 5vw;
   font-size: 1.3rem;
-
   a {
     transition: all 250ms;
     &:hover {
@@ -36,4 +31,8 @@ nav {
       cursor: pointer;
     }
   }
+}
+
+ul.main-nav .nav-i > a {
+  color: white;
 }

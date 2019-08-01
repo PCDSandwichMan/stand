@@ -110,16 +110,17 @@ form {
       display: inline-block;
       font-size: 1.8rem;
       margin: 0 1vw;
-      padding: .5vw 1.5vw;
+      padding: 0.5vw 1.5vw;
       background-color: #262f38;
-      &:hover{
+      &:hover {
         cursor: pointer;
+        background-color: $header-lightBlue;
       }
     }
     margin: 4vw;
   }
   small {
-    color: #8F9AA7;
+    color: #8f9aa7;
     span {
       color: #e31b6d;
     }
@@ -132,8 +133,16 @@ form {
     background-color: #e31b6d;
     padding: 1vw 1.3vw;
     margin-top: -3vw;
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  &:hover {
+    color: white;
   }
 }
