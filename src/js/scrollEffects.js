@@ -1,4 +1,16 @@
 import jump from 'jump.js/dist/jump.module';
+const sal = require('sal.js');
+// - Install for scroll effects
+sal();
+// * sal html format
+/*
+
+ data-sal="slide-up"
+ data-sal-delay="500"
+ data-sal-easing="ease-out-bounce"
+ data-sal-duration="1000"
+ 
+*/
 
 // - Top Button
 const header__button = document.getElementById('header__button');
