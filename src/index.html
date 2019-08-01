@@ -31,24 +31,40 @@
     </header>
     <main>
       <!-- - Nav for body -->
-      <nav>
-        <ul class="main-nav" id="scroll-nav">
-          <li class="nav-i" id="main-i">
-            <a id="main-i">Home</a>
-          </li>
-          <li class="nav-i">
-            <a id="about-i">About</a>
-          </li>
-          <li class="nav-i">
-            <a id="blog-i">Blog</a>
-          </li>
-          <li class="nav-i">
-            <a id="meetup-i">Meetups</a>
-          </li>
-          <li class="nav-i">
-            <a id="contact-i">Contact</a>
-          </li>
-        </ul>
+
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark-cust">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active" id="main-i">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item" id="about-i">
+              <a class="nav-link ml-5" href="#">About</a>
+            </li>
+            <li class="nav-item" id="blog-i">
+              <a class="nav-link ml-5" href="#">Blog</a>
+            </li>
+            <li class="nav-item" id="meetup-i">
+              <a class="nav-link ml-5" href="#">Meetups</a>
+            </li>
+            <li class="nav-item" id="contact-i">
+              <a class="nav-link ml-5" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <!-- - Main Content Start -->
       <a class="nav-img">
@@ -148,7 +164,7 @@
           <!--  -->
           <div class="blog__container--item">
             <div class="slide-top">
-              <h3 class="slide-top__text">How to do we</h3>
+              <h3 class="slide-top__text">How we like to</h3>
               <h4 class="slide-top__focus">Fight Back</h4>
             </div>
             <img

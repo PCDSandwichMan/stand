@@ -5,7 +5,7 @@
 }
 
 .card-deck:hover .card {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .card-deck .card:hover {
@@ -18,7 +18,7 @@
   img {
     height: 18vw;
   }
-  transition: all 300ms;
+  transition: all 400ms !important;
 }
 
 .card-title {
@@ -63,5 +63,131 @@
     h5 {
       color: $header-lightBlue;
     }
+  }
+}
+
+// - Media Queries
+
+@media only screen and (min-width: 877px) and (max-device-width: 1042px) {
+  .card-title {
+    border-bottom: 2px $header-lightBlue solid;
+    padding-bottom: 1vw;
+    h5 {
+      font-weight: 800;
+      color: black;
+      font-size: 1rem;
+    }
+  }
+  .card-text {
+    font-size: .75rem;
+  }
+}
+
+
+@media only screen and (min-width: 725px) and (max-device-width: 876px) {
+  .card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+    grid-auto-rows: 45vw;
+  }
+  
+  .card-title {
+    border-bottom: 2px $header-lightBlue solid;
+    padding-bottom: 1vw;
+    h5 {
+      font-weight: 800;
+      color: black;
+      font-size: 1rem;
+    }
+  }
+  .card-text {
+    font-size: .75rem;
+  }
+}
+
+@media only screen and (min-width: 608px) and (max-device-width: 724px) {
+  .card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-auto-rows: 60vw;
+    justify-items: center;
+  }
+
+  .card {
+    width: 75%;
+    img {
+      height: 38vw;
+    }
+  }
+  
+  .card-title {
+    border-bottom: 2px $header-lightBlue solid;
+    padding-bottom: 1vw;
+    h5 {
+      font-weight: 800;
+      color: black;
+      font-size: 1rem;
+    }
+  }
+  .card-text {
+    font-size: .75rem;
+  }
+}
+
+@media only screen and (min-width: 459px) and (max-device-width: 607px) {
+  .card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-auto-rows: 80vw;
+    justify-items: center;
+  }
+
+  .card {
+    width: 75%;
+    img {
+      height: 38vw;
+    }
+  }
+  
+  .card-title {
+    border-bottom: 2px $header-lightBlue solid;
+    padding-bottom: 1vw;
+    h5 {
+      font-weight: 800;
+      color: black;
+      font-size: 1rem;
+    }
+  }
+  .card-text {
+    font-size: .75rem;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-device-width: 458px) {
+  .card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-auto-rows: 100vw;
+    justify-items: center;
+  }
+
+  .card {
+    width: 75%;
+    img {
+      height: 38vw;
+    }
+  }
+  
+  .card-title {
+    border-bottom: 2px $header-lightBlue solid;
+    padding-bottom: 1vw;
+    h5 {
+      font-weight: 800;
+      color: black;
+      font-size: 1rem;
+    }
+  }
+  .card-text {
+    font-size: .75rem;
   }
 }

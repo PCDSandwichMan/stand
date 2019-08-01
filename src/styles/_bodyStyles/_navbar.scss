@@ -1,38 +1,34 @@
 @import '../helpers/placeholders';
 
-nav {
+
+
+// - Bootstrap bar
+  nav {
+    background-color: #1a242f;
+    border-bottom: #53c3ca 4px solid;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+  }
+  
+.bg-dark-cust {
   background-color: #1a242f;
-  border-bottom: #53c3ca 4px solid;
-  position: sticky;
-  top: 0;
-  z-index: 9;
 }
 
-.main-nav {
-  display: flex;
-  align-items: center;
-  margin-left: 15%;
-  padding: 1.2vw 0;
-}
-
-#main-i a {
-  margin-left: 0vw;
-  color: $pink;
-}
-
-ul.main-nav .nav-i {
-  font-weight: lighter;
-  margin-left: 5vw;
+.navbar-dark .navbar-nav .nav-link {
   font-size: 1.3rem;
-  a {
-    transition: all 250ms;
-    &:hover {
-      color: $pink;
-      cursor: pointer;
-    }
+  font-weight: lighter;
+  color: white;
+  transition: all 250ms;
+  &:hover {
+    color: $pink;
   }
 }
 
-ul.main-nav .nav-i > a {
-  color: white;
+.navbar-nav {
+  margin-left: 15vw;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link{
+  color: $pink;
 }

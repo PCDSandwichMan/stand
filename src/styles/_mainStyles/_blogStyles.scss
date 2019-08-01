@@ -90,3 +90,14 @@
     }
   }
 }
+
+// - Media queries
+
+@media only screen and (min-width: 0px) and (max-device-width: 750px) {
+  #blog__container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, .85fr));
+    justify-content: center;
+    grid-auto-rows: 45vw;
+    grid-gap: 1vw;
+  }
+}

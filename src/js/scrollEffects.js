@@ -17,7 +17,7 @@ const header__button = document.getElementById('header__button');
 
 // * Nav button scroll effects
 header__button.addEventListener('click', () => {
-  jump('.main-nav', {
+  jump('.navbar', {
     duration: 1000,
     offset: 0
   });
