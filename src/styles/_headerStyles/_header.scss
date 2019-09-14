@@ -69,3 +69,20 @@ header {
     }
   }
 }
+
+// - Media Queries
+@media only screen and (max-device-width: 509px) {
+  #headContainer__title {
+    font-size: 7rem;
+  }
+
+  #header__button {
+    h3 {
+      font-size: 1.3rem;
+    }
+    i {
+      font-size: 1rem;
+      margin-left: 1.5vw;
+    }
+  }
+}

@@ -11,7 +11,7 @@
     z-index: 9;
   }
   
-.bg-dark-cust {
+.bg-dark-custom {
   background-color: #1a242f;
 }
 
@@ -29,6 +29,8 @@
   margin-left: 15vw;
 }
 
-.navbar-dark .navbar-nav .active>.nav-link{
-  color: $pink;
+// - js change
+
+.active {
+  color: $pink !important;
 }

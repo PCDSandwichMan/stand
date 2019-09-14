@@ -1,16 +1,9 @@
 import jump from 'jump.js/dist/jump.module';
-const sal = require('sal.js');
+import sal from 'sal.js';
 // - Install for scroll effects
 sal();
-// * sal html format
-/*
 
- data-sal="slide-up"
- data-sal-delay="500"
- data-sal-easing="ease-out-bounce"
- data-sal-duration="1000"
- 
-*/
+const screenWidth = window.innerWidth;
 
 // - Top Button
 const header__button = document.getElementById('header__button');
@@ -41,28 +34,28 @@ homeNav.addEventListener('click', () => {
 aboutNav.addEventListener('click', () => {
   jump('#about', {
     duration: 1000,
-    offset: -150
+    offset: screenWidth > 992 ? -150 : -400
   });
 });
 
 blogNav.addEventListener('click', () => {
   jump('#blog', {
     duration: 1000,
-    offset: -100
+    offset: screenWidth > 992 ? -100 : -350
   });
 });
 
 meetupNav.addEventListener('click', () => {
   jump('#meetup', {
     duration: 1000,
-    offset: -100
+    offset: screenWidth > 992 ? -100 : -320
   });
 });
 
 contactNav.addEventListener('click', () => {
   jump('#footer', {
     duration: 1000,
-    offset: 50
+    offset: screenWidth > 992 ? 50 : -140
   });
 });
 
@@ -76,3 +69,4 @@ footBtn.addEventListener('click', () => {
     offset: 0
   });
 });
+

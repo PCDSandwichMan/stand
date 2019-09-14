@@ -115,6 +115,19 @@ header {
   }
 }
 
+@media only screen and (max-device-width: 509px) {
+  #headContainer__title {
+    font-size: 7rem;
+  }
+  #header__button h3 {
+    font-size: 1.3rem;
+  }
+  #header__button i {
+    font-size: 1rem;
+    margin-left: 1.5vw;
+  }
+}
+
 #about, #blog, #meetup, #leadership {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,7 +166,7 @@ nav {
   z-index: 9;
 }
 
-.bg-dark-cust {
+.bg-dark-custom {
   background-color: #1a242f;
 }
 
@@ -173,8 +186,8 @@ nav {
   margin-left: 15vw;
 }
 
-.navbar-dark .navbar-nav .active > .nav-link {
-  color: #c13362;
+.active {
+  color: #c13362 !important;
 }
 
 #about, #blog, #meetup, #leadership {
@@ -408,8 +421,8 @@ nav {
 .card {
   color: #616161;
   border: none;
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
+  -webkit-transition: all 400ms !important;
+  transition: all 400ms !important;
 }
 
 .card img {
